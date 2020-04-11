@@ -1,2 +1,4 @@
 Jag kommer att använda filen för att ha mina intressanta funderingar och plan.
 
+2020-04-11: 12:40
+Nu testar jag en andra commit.

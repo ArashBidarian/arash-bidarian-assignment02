@@ -14,8 +14,9 @@ public class BasicCalculator implements BasicOperations{
         System.out.print("Enter second number: ");
         Scanner inputValue2 = new Scanner(System.in);
         num2 = inputValue2.nextDouble();
-		
+      
 		return num1 + num2;
+		
 	}
 	
 
@@ -57,9 +58,6 @@ public class BasicCalculator implements BasicOperations{
 		}	
 		
 	}
-
-
-
 
 }
 

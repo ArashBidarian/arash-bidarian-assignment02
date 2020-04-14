@@ -63,6 +63,10 @@ public class Main {
 		AdvancedCalculator ac7 = new AdvancedCalculator();
 		System.out.println(ac7.invers(0));
 
+		AdvancedCalculator ac8 = new AdvancedCalculator();
+		System.out.println(ac8.mod(27, 20));
+
+		
 	}
 
 }

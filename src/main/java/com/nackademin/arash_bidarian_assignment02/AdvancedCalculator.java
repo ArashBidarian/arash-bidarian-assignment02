@@ -46,6 +46,18 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedOpera
 		}
 	}
 
+	// (7) returns num1 mod num2
+	public int mod(int num1, int num2) {
+
+		if (num2 != 0) {
+			return num1 % num2;
+		} else {
+			System.out.println("0 is allowed in denominator!");
+			return -9999999;
+
+		}
+
+	}
 
 }
 

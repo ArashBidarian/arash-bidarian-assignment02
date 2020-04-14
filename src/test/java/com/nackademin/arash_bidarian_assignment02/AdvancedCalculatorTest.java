@@ -105,7 +105,20 @@ public class AdvancedCalculatorTest {
 		}
 	}
 	
-
+	//Random test for Operations: mod
+	@Test
+	public void randomTestMod() {
+		int tempRandomValue1 = 0;
+		int tempRandomValue2 = 0;
+		int tempResult = 0;
+		for (int i = 0; i < 5; i++) {
+			tempRandomValue1 = random.nextInt();
+			tempRandomValue2 = random.nextInt();
+			tempResult = tempRandomValue1 % tempRandomValue2;
+			LOG.info("Testing the method mod wtih: " + tempRandomValue1 + "mod" + tempRandomValue2);
+			assertEquals(acTest.mod(tempRandomValue1, tempRandomValue2), tempResult, 0);
+		}
+	}
 	
 	
 	

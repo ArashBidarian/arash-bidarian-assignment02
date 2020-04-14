@@ -4,6 +4,9 @@ package com.nackademin.arash_bidarian_assignment02;
 
 import com.nackademin.arash_bidarian_assignment02.BasicOperations;
 
+//Operations: addition, subtraction, multiplication, division
+//============================================================
+
 public class BasicCalculator implements BasicOperations {
 
 	public double addition(double num1, double num2) {

@@ -3,10 +3,13 @@ package com.nackademin.arash_bidarian_assignment02;
 import com.nackademin.arash_bidarian_assignment02.BasicCalculator;
 import com.nackademin.arash_bidarian_assignment02.AdvancedOperations;
 import java.lang.Math;
-// import java.util.Scanner;
+
+
+//Operations: square, cube, tenToPowerOf, xToPowOfY, absValue, invers, mod
+//=========================================================================
 
 public class AdvancedCalculator extends BasicCalculator implements AdvancedOperations {
-
+	
 	// (1) returns num raised to the power of 2
 	public double square(double num) {
 		return num * num;
@@ -43,18 +46,6 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedOpera
 		}
 	}
 
-	// (7) returns num1 mod num2
-	public double mod(double num1, double num2) {
-
-		if (num2 != 0) {
-			return num1 % num2;
-		} else {
-			System.out.println("0 is allowed in denominator!");
-			return -0.123456789;
-
-		}
-
-	}
 
 }
 

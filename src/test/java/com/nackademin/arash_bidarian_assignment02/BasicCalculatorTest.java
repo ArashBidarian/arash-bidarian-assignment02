@@ -14,8 +14,8 @@ public class BasicCalculatorTest {
 
 	BasicCalculator bc = new BasicCalculator();
 
-//	Random Test for addition, subtraction, multiplication, division
-//==================================================================
+//	Random Test for operations addition, subtraction, multiplication, division
+//=============================================================================
 	
 	//	Random Test for addition
 	@Test
@@ -80,20 +80,7 @@ public class BasicCalculatorTest {
 			LOG.info("Testing the method addition wtih: " + tempRandomValue1 + " & " + tempRandomValue2);
 			assertEquals(bcTest.division(tempRandomValue1, tempRandomValue2), tempResult, 0);		
 		}
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 	
 }
 

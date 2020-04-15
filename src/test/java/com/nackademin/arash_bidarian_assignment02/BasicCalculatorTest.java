@@ -16,10 +16,10 @@ public class BasicCalculatorTest {
 
 //	Random Test for operations addition, subtraction, multiplication, division
 //=============================================================================
-	
+// assertEquals(initieringen.funktion/metod(värde1,värde2, värde att matcha, avvikelsetollerans))
+
 	//	Random Test for addition
 	@Test
-	// assertEquals(initieringen.funktion/metod(värde1,värde2, värde att matcha, avvikelsetollerans))
 	public void randomTestAddition() {
 		double tempRandomValue1 = 0.0;
 		double tempRandomValue2 = 0.0;
@@ -35,7 +35,6 @@ public class BasicCalculatorTest {
 
 	//	Random Test for subtraction
 	@Test
-	// assertEquals(initieringen.funktion/metod(värde1,värde2, värde att matcha, avvikelsetollerans))
 	public void randomTestSubtraction() {
 		double tempRandomValue1 = 0.0;
 		double tempRandomValue2 = 0.0;
@@ -51,7 +50,6 @@ public class BasicCalculatorTest {
 
 	//	Random Test for  multiplication
 	@Test
-	// assertEquals(initieringen.funktion/metod(värde1,värde2, värde att matcha, avvikelsetollerans))
 	public void randomTestMultiplication() {
 		double tempRandomValue1 = 0.0;
 		double tempRandomValue2 = 0.0;
@@ -64,6 +62,9 @@ public class BasicCalculatorTest {
 			assertEquals(bcTest.multiplication(tempRandomValue1, tempRandomValue2), tempResult, 0);
 		}
 	}
+	
+
+
 	
 	//	Random Test for division
 	
@@ -81,6 +82,21 @@ public class BasicCalculatorTest {
 			assertEquals(bcTest.division(tempRandomValue1, tempRandomValue2), tempResult, 0);		
 		}
 	}	
+
+	// Branch Coverage/ Path Coverage
+
+	@Test
+	public void coverageTestDivision() {
+		assertEquals(bcTest.division(5.0 , 10), 0.5, 0);
+		assertEquals(bcTest.division(-10, 5), -2, 0);
+		assertEquals(bcTest.division(20, -10), -2, 0);
+		assertEquals(bcTest.division(0, -10), 0, 0);
+		assertEquals(bcTest.division(-10, -10), 1, 0);
+//		assertEquals(bcTest.division(10, 0), 1, -0.123456789);
+		
+
+		}
+	
 	
 }
 

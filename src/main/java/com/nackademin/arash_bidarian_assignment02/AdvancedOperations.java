@@ -20,8 +20,4 @@ public interface AdvancedOperations {
 	// (6) returns 1/num
 	public double invers(double num);
 
-	// (7) returns num1 mod num2
-	public int mod(int num1, int num2);
-
-
 }

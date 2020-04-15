@@ -32,7 +32,17 @@ public class AdvancedCalculatorTest {
 			assertEquals(acTest.square(tempRandomValue1), tempResult, 0);
 		}
 	}
-	
+
+	// Coverage square
+	@Test
+	public void coverageTestSquare() {
+		assertEquals(acTest.square(2), 4, 0);
+		assertEquals(acTest.square(-2), 4, 0);
+//		assertEquals(acTest.square(-0.1), 0.01, 0); ?? 
+		assertEquals(acTest.square(0), 0, 0); 
+//
+	}
+
 	
 	
 	//Random test for Operations: cube
@@ -48,18 +58,39 @@ public class AdvancedCalculatorTest {
 		}
 	}
 	
+	// Coverage Cube
+	@Test
+	public void coverageTestCube() {
+		assertEquals(acTest.cube(2), 8, 0);
+		assertEquals(acTest.cube(-2), -8, 0);
+//		assertEquals(acTest.cube(-0.1), -0.001, 0);  ??
+		assertEquals(acTest.cube(0), 0, 0);
+	}
+	
+	
 	//Random test for Operations: tenToPowerOf
 	@Test
 	public void randomTenToPowerOf() {
 		double tempRandomValue1 = 0.0;
 		double tempResult = 0.0;
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 100; i++) {
 			tempRandomValue1 = random.nextInt() / 9.0;
 			tempResult = Math.pow(10, tempRandomValue1);
 			LOG.info("Testing the method tenToPowerOf with: " + tempRandomValue1);
 			assertEquals(acTest.tenToPowerOf(tempRandomValue1), tempResult, 0);
 		}
 	}
+	
+	
+	// Coverage tenToPowerOf
+	@Test
+	public void coverageTestTenToPowerOf() {
+		assertEquals(acTest.tenToPowerOf(2), 100, 0);
+		assertEquals(acTest.tenToPowerOf(-2), 0.01, 0);
+		assertEquals(acTest.tenToPowerOf(-2), 0.01, 0);
+		assertEquals(acTest.tenToPowerOf(0), 1, 0);
+	}
+	
 	
 	//Random test for Operations: xToPowOfY
 	@Test
@@ -76,18 +107,40 @@ public class AdvancedCalculatorTest {
 		}
 	}
 	
+	
+	// Coverage square
+	@Test
+	public void coverageTestXToPowOfY() {
+		assertEquals(acTest.xToPowOfY(2, 3), 8, 0);
+		assertEquals(acTest.xToPowOfY(-2,3), -8, 0);
+//		assertEquals(acTest.xToPowOfY(-0.1, 2), 0.01, 0); ??
+		assertEquals(acTest.xToPowOfY(5, 0), 1, 0); 
+
+	}
+	
+	
 	//Random test for Operations: absValue
 	@Test
 	public void randomTestAbsValue() {
 		double tempRandomValue1 = 0.0;
 		double tempResult = 0.0;
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 100; i++) {
 			tempRandomValue1 = random.nextInt() / 9.0;
 			tempResult = Math.abs(tempRandomValue1);
 			LOG.info("Testing the method absValue wtih: " + tempRandomValue1);
 			assertEquals(acTest.absValue(tempRandomValue1), tempResult, 0);
 		}
 	}
+	
+	// Coverage inverse
+	@Test
+	public void coverageTestAbsValue() {
+		assertEquals(acTest.absValue(5.0), 5.0, 0);
+		assertEquals(acTest.absValue(-10), 10, 0);
+		assertEquals(acTest.absValue(-0.1), 0.1, 0);
+		assertEquals(acTest.absValue(0), 0, 0);		
+	}
+	
 	
 	//Random test for Operations:  invers
 	@Test
@@ -96,7 +149,7 @@ public class AdvancedCalculatorTest {
 		double tempRandomValue1 = 0.0;
 //		double tempRandomValue2 = 0.0;
 		double tempResult = 0.0;
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 100; i++) {
 			tempRandomValue1 = random.nextInt() / 9.0;
 //			tempRandomValue2 = random.nextInt() / 9.0;
 			tempResult = 1/ tempRandomValue1;
@@ -105,14 +158,16 @@ public class AdvancedCalculatorTest {
 		}
 	}
 	
+	
+	// Coverage inverse
 	@Test
 	public void coverageTestInvers() {
 		assertEquals(acTest.invers(5.0), 0.2, 0);
 		assertEquals(acTest.invers(-10), -0.1, 0);
 		assertEquals(acTest.invers(-0.1), -10, 0);
 		assertEquals(acTest.invers(100), 0.01, 0);
+		assertEquals(acTest.invers(0), -0.123456789, 0);
+		
 	}
-//		assertEquals(acTest.invers(0), 1, -0.123456789);
-	
 
 }

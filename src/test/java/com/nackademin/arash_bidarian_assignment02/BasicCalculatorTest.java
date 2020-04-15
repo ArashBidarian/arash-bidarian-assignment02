@@ -32,6 +32,18 @@ public class BasicCalculatorTest {
 			assertEquals(bcTest.addition(tempRandomValue1, tempRandomValue2), tempResult, 0);
 		}
 	}
+	
+	// Coverage additon
+	@Test
+	public void coverageTestAddition() {
+		assertEquals(bcTest.addition(5 , 10), 15, 0);
+		assertEquals(bcTest.addition(-10, 5), -5, 0);
+		assertEquals(bcTest.addition(20, -10), 10, 0);
+		assertEquals(bcTest.addition(0, -10), -10, 0);
+		assertEquals(bcTest.addition(0, 0), 0, 0);
+
+		}
+	
 
 	//	Random Test for subtraction
 	@Test
@@ -47,6 +59,18 @@ public class BasicCalculatorTest {
 			assertEquals(bcTest.subtraction(tempRandomValue1, tempRandomValue2), tempResult, 0);
 		}
 	}
+	
+	// Coverage subtraction
+	@Test
+	public void coverageTestSubtraction() {
+		assertEquals(bcTest.subtraction(5 , 10), -5, 0);
+		assertEquals(bcTest.subtraction(-10, 5), -15, 0);
+		assertEquals(bcTest.subtraction(20, -10), 30, 0);
+		assertEquals(bcTest.subtraction(0, -10), 10, 0);
+		assertEquals(bcTest.subtraction(0, 0), 0, 0);
+
+		}
+	
 
 	//	Random Test for  multiplication
 	@Test
@@ -63,18 +87,27 @@ public class BasicCalculatorTest {
 		}
 	}
 	
+	// Coverage multiplication
+	@Test
+	public void coverageTestMultiplication() {
+		assertEquals(bcTest.multiplication(5 , 10), 50, 0);
+		assertEquals(bcTest.multiplication(-10, 5), -50, 0);
+		assertEquals(bcTest.multiplication(20, -10), -200, 0);
+		assertEquals(bcTest.multiplication(0, -10), 0, 0);
+		assertEquals(bcTest.multiplication(0, 0), 0, 0);
 
+		}
 
 	
 	//	Random Test for division
 	
 	@Test
 	// assertEquals(initieringen.funktion/metod(värde1,värde2, värde att matcha, avvikelsetollerans))
-	public void randomTtestDivision() {
+	public void randomTestDivision() {
 		double tempRandomValue1 = 0.0;
 		double tempRandomValue2 = 0.0;
 		double tempResult = 0.0;
-		for (int i = 0;  i < 5; i++) {
+		for (int i = 0;  i < 100; i++) {
 			tempRandomValue1 = random.nextInt()/9.0;
 			tempRandomValue2 = random.nextInt()/9.0;
 			tempResult = tempRandomValue1 / tempRandomValue2; 
@@ -83,7 +116,7 @@ public class BasicCalculatorTest {
 		}
 	}	
 
-	// Branch Coverage/ Path Coverage
+	// Coverage
 
 	@Test
 	public void coverageTestDivision() {
@@ -92,9 +125,7 @@ public class BasicCalculatorTest {
 		assertEquals(bcTest.division(20, -10), -2, 0);
 		assertEquals(bcTest.division(0, -10), 0, 0);
 		assertEquals(bcTest.division(-10, -10), 1, 0);
-//		assertEquals(bcTest.division(10, 0), 1, -0.123456789);
-		
-
+		assertEquals(bcTest.division(10, 0), -0.123456789, 0);
 		}
 	
 	

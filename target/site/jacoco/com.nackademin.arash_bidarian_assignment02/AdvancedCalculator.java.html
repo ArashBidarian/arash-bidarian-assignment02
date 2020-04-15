@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AdvancedCalculator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">arash-bidarian-assignment02</a> &gt; <a href="index.source.html" class="el_package">com.nackademin.arash_bidarian_assignment02</a> &gt; <span class="el_source">AdvancedCalculator.java</span></div><h1>AdvancedCalculator.java</h1><pre class="source lang-java linenums">package com.nackademin.arash_bidarian_assignment02;
+
+import com.nackademin.arash_bidarian_assignment02.BasicCalculator;
+import com.nackademin.arash_bidarian_assignment02.AdvancedOperations;
+import java.lang.Math;
+
+
+//Operations: square, cube, tenToPowerOf, xToPowOfY, absValue, invers, mod
+//=========================================================================
+
+<span class="fc" id="L11">public class AdvancedCalculator extends BasicCalculator implements AdvancedOperations {</span>
+	
+	// (1) returns num raised to the power of 2
+	public double square(double num) {
+<span class="fc" id="L15">		return num * num;</span>
+	}
+
+	// (2) returns num raised to the power of 3
+	public double cube(double num) {
+<span class="fc" id="L20">		return Math.pow(num, 3);</span>
+	}
+
+	// (3) returns 10 raised to the power of number
+	public double tenToPowerOf(double num) {
+<span class="fc" id="L25">		return Math.pow(10, num);</span>
+	}
+
+	// (4) returns num1 raised to the power of num2
+	public double xToPowOfY(double num1, double num2) {
+<span class="fc" id="L30">		return Math.pow(num1, num2);</span>
+	}
+
+	// (5) returns |number|
+	public double absValue(double num) {
+<span class="fc" id="L35">		return Math.abs(num);</span>
+	}
+
+	// (6) returns 1/num
+	public double invers(double num) {
+<span class="fc bfc" id="L40" title="All 2 branches covered.">		if (num != 0) {</span>
+<span class="fc" id="L41">			return 1 / num;</span>
+		} else {
+<span class="fc" id="L43">			System.out.println(&quot;0 is NOT allowed in denominator!&quot;);</span>
+<span class="fc" id="L44">			return -0.123456789;</span>
+
+		}
+	}
+
+
+
+}
+
+//System.out.print(&quot;Enter number: &quot;);
+//Scanner inputValue1 = new Scanner(System.in);
+//num = inputValue1.nextDouble();
+
+
+
+//System.out.print(&quot;Enter first number: &quot;);
+//Scanner inputValue1 = new Scanner(System.in);
+//num1 = inputValue1.nextDouble();
+//
+//System.out.print(&quot;Enter second number: &quot;);
+//Scanner inputValue2 = new Scanner(System.in);
+//num2 = inputValue2.nextDouble();
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

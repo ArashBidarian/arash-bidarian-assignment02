@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="20" passed="20">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="766" started-at="2020-04-15T01:56:03Z" finished-at="2020-04-15T01:56:04Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="766" started-at="2020-04-15T01:56:03Z" finished-at="2020-04-15T01:56:04Z">
+      <class name="com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest">
+        <test-method status="PASS" signature="coverageTestXToPowOfY()[pri:0, instance:coverageTestXToPowOfY(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="coverageTestXToPowOfY" duration-ms="1" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coverageTestXToPowOfY -->
+        <test-method status="PASS" signature="coverageTestCube()[pri:0, instance:coverageTestCube(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="coverageTestCube" duration-ms="0" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coverageTestCube -->
+        <test-method status="PASS" signature="coverageTestTenToPowerOf()[pri:0, instance:coverageTestTenToPowerOf(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="coverageTestTenToPowerOf" duration-ms="1" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coverageTestTenToPowerOf -->
+        <test-method status="PASS" signature="randomTenToPowerOf()[pri:0, instance:randomTenToPowerOf(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="randomTenToPowerOf" duration-ms="96" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomTenToPowerOf -->
+        <test-method status="PASS" signature="coverageTestInvers()[pri:0, instance:coverageTestInvers(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="coverageTestInvers" duration-ms="0" started-at="2020-04-15T03:56:04Z" finished-at="2020-04-15T03:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coverageTestInvers -->
+        <test-method status="PASS" signature="randomTestAbsValue()[pri:0, instance:randomTestAbsValue(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="randomTestAbsValue" duration-ms="150" started-at="2020-04-15T03:56:04Z" finished-at="2020-04-15T03:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomTestAbsValue -->
+        <test-method status="PASS" signature="coverageTestSquare()[pri:0, instance:coverageTestSquare(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="coverageTestSquare" duration-ms="0" started-at="2020-04-15T03:56:04Z" finished-at="2020-04-15T03:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coverageTestSquare -->
+        <test-method status="PASS" signature="randomTestCube()[pri:0, instance:randomTestCube(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="randomTestCube" duration-ms="2" started-at="2020-04-15T03:56:04Z" finished-at="2020-04-15T03:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomTestCube -->
+        <test-method status="PASS" signature="randomTestInvers()[pri:0, instance:randomTestInvers(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="randomTestInvers" duration-ms="88" started-at="2020-04-15T03:56:04Z" finished-at="2020-04-15T03:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomTestInvers -->
+        <test-method status="PASS" signature="coverageTestAbsValue()[pri:0, instance:coverageTestAbsValue(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="coverageTestAbsValue" duration-ms="0" started-at="2020-04-15T03:56:04Z" finished-at="2020-04-15T03:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coverageTestAbsValue -->
+        <test-method status="PASS" signature="randomTestSquare()[pri:0, instance:randomTestSquare(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="randomTestSquare" duration-ms="3" started-at="2020-04-15T03:56:04Z" finished-at="2020-04-15T03:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomTestSquare -->
+        <test-method status="PASS" signature="randomTestXToPowOfY()[pri:0, instance:randomTestXToPowOfY(com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest)]" name="randomTestXToPowOfY" duration-ms="3" started-at="2020-04-15T03:56:04Z" finished-at="2020-04-15T03:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomTestXToPowOfY -->
+      </class> <!-- com.nackademin.arash_bidarian_assignment02.AdvancedCalculatorTest -->
+      <class name="com.nackademin.arash_bidarian_assignment02.BasicCalculatorTest">
+        <test-method status="PASS" signature="randomTestAddition()[pri:0, instance:randomTestAddition(com.nackademin.arash_bidarian_assignment02.BasicCalculatorTest)]" name="randomTestAddition" duration-ms="38" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomTestAddition -->
+        <test-method status="PASS" signature="coverageTestAddition()[pri:0, instance:coverageTestAddition(com.nackademin.arash_bidarian_assignment02.BasicCalculatorTest)]" name="coverageTestAddition" duration-ms="0" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coverageTestAddition -->
+        <test-method status="PASS" signature="randomTestSubtraction()[pri:0, instance:randomTestSubtraction(com.nackademin.arash_bidarian_assignment02.BasicCalculatorTest)]" name="randomTestSubtraction" duration-ms="6" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomTestSubtraction -->
+        <test-method status="PASS" signature="coverageTestMultiplication()[pri:0, instance:coverageTestMultiplication(com.nackademin.arash_bidarian_assignment02.BasicCalculatorTest)]" name="coverageTestMultiplication" duration-ms="0" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coverageTestMultiplication -->
+        <test-method status="PASS" signature="randomTestDivision()[pri:0, instance:randomTestDivision(com.nackademin.arash_bidarian_assignment02.BasicCalculatorTest)]" name="randomTestDivision" duration-ms="131" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomTestDivision -->
+        <test-method status="PASS" signature="coverageTestSubtraction()[pri:0, instance:coverageTestSubtraction(com.nackademin.arash_bidarian_assignment02.BasicCalculatorTest)]" name="coverageTestSubtraction" duration-ms="1" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coverageTestSubtraction -->
+        <test-method status="PASS" signature="coverageTestDivision()[pri:0, instance:coverageTestDivision(com.nackademin.arash_bidarian_assignment02.BasicCalculatorTest)]" name="coverageTestDivision" duration-ms="1" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coverageTestDivision -->
+        <test-method status="PASS" signature="randomTestMultiplication()[pri:0, instance:randomTestMultiplication(com.nackademin.arash_bidarian_assignment02.BasicCalculatorTest)]" name="randomTestMultiplication" duration-ms="6" started-at="2020-04-15T03:56:03Z" finished-at="2020-04-15T03:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- randomTestMultiplication -->
+      </class> <!-- com.nackademin.arash_bidarian_assignment02.BasicCalculatorTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

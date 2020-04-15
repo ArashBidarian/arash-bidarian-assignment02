@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">arash-bidarian-assignment02</a> &gt; <a href="index.source.html" class="el_package">com.nackademin.arash_bidarian_assignment02</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package com.nackademin.arash_bidarian_assignment02;
+
+// import com.nackademin.arash_bidarian_assignment02.BasicCalculator;
+import com.nackademin.arash_bidarian_assignment02.AdvancedCalculator;
+// import java.util.Scanner;
+
+<span class="nc" id="L7">public class Main {</span>
+
+	public static void main(String[] args) {
+//		double inputValue = 0.0;
+//		double num = 0.0;
+//		double num1 = 0.0;
+//		double num2 = 0.0;
+//		char operator = ' ';
+		
+		//========================
+		// BAsic Calculator
+
+<span class="nc" id="L19">		BasicCalculator bc = new BasicCalculator();	</span>
+<span class="nc" id="L20">		System.out.println(bc.addition(4, 5));</span>
+		
+		
+<span class="nc" id="L23">		BasicCalculator bc1 = new BasicCalculator();	</span>
+<span class="nc" id="L24">		System.out.println(bc1.multiplication(20, 100));</span>
+		
+		
+<span class="nc" id="L27">		BasicCalculator bc2 = new BasicCalculator();	</span>
+<span class="nc" id="L28">		System.out.println(bc2.division(20, 100));</span>
+		
+<span class="nc" id="L30">		BasicCalculator bc3 = new BasicCalculator();	</span>
+<span class="nc" id="L31">		System.out.println(bc3.division(20, 0));</span>
+		
+		//======================================
+		
+
+		
+		// AdvancedCalculator
+		//===================
+		
+		// AC ARV
+<span class="nc" id="L41">		AdvancedCalculator ac1 = new AdvancedCalculator();</span>
+<span class="nc" id="L42">		System.out.println(ac1.multiplication(4, 5));		</span>
+		
+<span class="nc" id="L44">		AdvancedCalculator ac2 = new AdvancedCalculator();</span>
+<span class="nc" id="L45">		System.out.println(ac2.subtraction(5, 50));	</span>
+		
+		
+		// AC Egna funktione 
+		// square, cube, tenToPowerOf, xToPowOfY, absValue, invers, mod
+
+<span class="nc" id="L51">		AdvancedCalculator ac3 = new AdvancedCalculator();</span>
+<span class="nc" id="L52">		System.out.println(ac3.square(3));	</span>
+		
+<span class="nc" id="L54">		AdvancedCalculator ac4 = new AdvancedCalculator();</span>
+<span class="nc" id="L55">		System.out.println(ac4.cube(2));	</span>
+		
+<span class="nc" id="L57">		AdvancedCalculator ac5 = new AdvancedCalculator();</span>
+<span class="nc" id="L58">		System.out.println(ac5.xToPowOfY(2, 3));	</span>
+		
+<span class="nc" id="L60">		AdvancedCalculator ac6 = new AdvancedCalculator();</span>
+<span class="nc" id="L61">		System.out.println(ac6.invers(5));	</span>
+		
+<span class="nc" id="L63">		AdvancedCalculator ac7 = new AdvancedCalculator();</span>
+<span class="nc" id="L64">		System.out.println(ac7.invers(0));</span>
+
+//		AdvancedCalculator ac8 = new AdvancedCalculator();
+//		System.out.println(ac8.mod(27, 20));
+
+		
+<span class="nc" id="L70">	}</span>
+
+}
+
+
+
+//Scanner inputValue = new Scanner(System.in);
+//
+//System.out.println(&quot;Choose one of the operations bellow by selecting their signs in parenteces&quot;);
+//System.out.println(&quot; (A) addition, (B) subtraction, (C) multiplication, (D) division&quot;);
+//System.out.println(&quot;(E)xToPowOfY,(F) mod, (G)square, (H)cube, (I)tenToPowerOf, (J)absValue, (K)invers&quot;);
+//
+//char functionName = inputValue.next().charAt(0);
+//////String functionName = reader.next().charAt(0);
+////BasicCalculator bc = new BasicCalculator();	
+//
+//if (functionName &gt;= 'A' &amp;&amp; functionName &lt;= 'K') {
+//
+//	AdvancedCalculator ac = new AdvancedCalculator();
+//
+//	switch (functionName) {
+//	case 'A': // (A) addition
+//		System.out.println(ac.addition(num1, num2));
+//		break;
+//	case 'B': // (B) subtraction
+//		System.out.println(ac.subtraction(num1, num2));
+//		break;
+//	case 'C': // (C) multiplication
+//		System.out.println(ac.multiplication(num1, num2));
+//		break;
+//	case 'D': // (D) division
+//		System.out.println(ac.division(num1, num2));
+//		break;
+//	case 'E': // (E)xToPowOfY
+//		System.out.println(ac.xToPowOfY(num1, num2));
+//		break;
+//	case 'F': // (F) mod
+//		System.out.println(ac.mod(num1, num2));
+//		break;
+//	case 'G': // (G)square
+//		System.out.println(ac.square(num));
+//		break;
+//	case 'H': // (H)cube, (I)tenToPowerOf, (J)absValue, (K)invers
+//		System.out.println(ac.cube(num));
+//		break;
+//	case 'I': // (I)tenToPowerOf, (J)absValue, (K)invers
+//		System.out.println(ac.tenToPowerOf(num));
+//		break;
+//	case 'J': // (J)absValue
+//		System.out.println(ac.absValue(num));
+//		break;
+//	case 'K': // (K)invers
+//		System.out.println(ac.invers(num));
+//		break;
+//
+//	}
+//} else {
+//	System.out.println(&quot;The Letter does not match the operation. Try again!&quot;);
+//}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
